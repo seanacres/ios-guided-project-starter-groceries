@@ -5,7 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,6 +60,7 @@
                                     <outlet property="categoryLabel" destination="gdU-Ch-RIO" id="YJS-Nl-oIa"/>
                                     <outlet property="countLabel" destination="uzY-kd-Xje" id="gsh-od-2Mj"/>
                                     <outlet property="nameLabel" destination="uHp-bY-hAK" id="3xF-Qb-9gX"/>
+                                    <segue destination="8QT-IB-u0I" kind="show" id="gR4-zy-JAP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,7 +73,55 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vd6-3L-qDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="-404"/>
+            <point key="canvasLocation" x="222" y="-404"/>
+        </scene>
+        <!--Grocery Detail View Controller-->
+        <scene sceneID="CPw-AR-AB5">
+            <objects>
+                <viewController id="8QT-IB-u0I" customClass="GroceryDetailViewController" customModule="Groceries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E0l-YJ-Q0S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGM-af-IDE">
+                                <rect key="frame" x="20" y="160.5" width="61" height="18"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aisle #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-96-3yL">
+                                <rect key="frame" x="316" y="155" width="68" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Am9-d6-bP5">
+                                <rect key="frame" x="167.5" y="224" width="79" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iGM-af-IDE" firstAttribute="leading" secondItem="cl1-yy-tzb" secondAttribute="leading" constant="20" id="H1n-Tp-okg"/>
+                            <constraint firstItem="cl1-yy-tzb" firstAttribute="trailing" secondItem="UjW-96-3yL" secondAttribute="trailing" constant="30" id="Zvf-Pd-lR1"/>
+                            <constraint firstItem="UjW-96-3yL" firstAttribute="top" secondItem="cl1-yy-tzb" secondAttribute="top" constant="15" id="aZC-nJ-6y1"/>
+                            <constraint firstItem="Am9-d6-bP5" firstAttribute="top" secondItem="UjW-96-3yL" secondAttribute="bottom" constant="40" id="lxG-V0-VCQ"/>
+                            <constraint firstItem="Am9-d6-bP5" firstAttribute="centerX" secondItem="cl1-yy-tzb" secondAttribute="centerX" id="nfS-Ea-whf"/>
+                            <constraint firstItem="iGM-af-IDE" firstAttribute="centerY" secondItem="UjW-96-3yL" secondAttribute="centerY" id="s8j-0J-RGK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cl1-yy-tzb"/>
+                    </view>
+                    <connections>
+                        <outlet property="aisleLabel" destination="UjW-96-3yL" id="GRs-9y-tJz"/>
+                        <outlet property="categoryLabel" destination="iGM-af-IDE" id="Zam-4i-uww"/>
+                        <outlet property="countLabel" destination="Am9-d6-bP5" id="uNu-CG-ayI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPo-JM-PxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-404"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FrB-wb-wLs">

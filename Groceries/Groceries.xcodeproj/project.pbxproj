@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66A0A445229EFB8300CBA696 /* GroceryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0A444229EFB8300CBA696 /* GroceryDetailViewController.swift */; };
 		CEC31CA622972174007F6F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CA522972174007F6F4A /* AppDelegate.swift */; };
 		CEC31CAB22972174007F6F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CA922972174007F6F4A /* Main.storyboard */; };
 		CEC31CAD22972176007F6F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CAC22972176007F6F4A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66A0A444229EFB8300CBA696 /* GroceryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDetailViewController.swift; sourceTree = "<group>"; };
 		CEC31CA222972174007F6F4A /* Groceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC31CA522972174007F6F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC31CAA22972174007F6F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CEC31CA522972174007F6F4A /* AppDelegate.swift */,
 				CEC31CB7229721A3007F6F4A /* GroceriesTableViewController.swift */,
 				CEC31CB9229722EA007F6F4A /* GroceryItemTableViewCell.swift */,
+				66A0A444229EFB8300CBA696 /* GroceryDetailViewController.swift */,
 				CEC31CA922972174007F6F4A /* Main.storyboard */,
 				CEC31CAC22972176007F6F4A /* Assets.xcassets */,
 				CEC31CAE22972176007F6F4A /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				CEC31CA622972174007F6F4A /* AppDelegate.swift in Sources */,
 				CEC31CBA229722EA007F6F4A /* GroceryItemTableViewCell.swift in Sources */,
 				CEC31CB8229721A3007F6F4A /* GroceriesTableViewController.swift in Sources */,
+				66A0A445229EFB8300CBA696 /* GroceryDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
